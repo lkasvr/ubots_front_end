@@ -46,8 +46,7 @@ export default function Page() {
                 {client?.requests.length > 0
                   ? client.requests.map((request) => (
                       <li key={request.id}>
-                        <a
-                          href="#"
+                        <div
                           className={`block h-full rounded-lg border p-4 hover:border-pink-600 ${
                             request.status === 'CONCLUIDA'
                               ? 'border-green-400'
@@ -66,8 +65,7 @@ export default function Page() {
 
                           <ul>
                             <li className="p-1 leading-none">
-                              <a
-                                href="#"
+                              <div
                                 className={`text-[11px] font-medium  ${
                                   !request.assistantId
                                     ? 'text-orange-400 font-bold'
@@ -77,14 +75,14 @@ export default function Page() {
                                 {request.assistantId
                                   ? ''
                                   : 'Não possui assistente atribuído'}
-                              </a>
+                              </div>
                             </li>
                           </ul>
 
                           <p className="mt-1 text-xs font-medium text-gray-300">
                             {request.desc}
                           </p>
-                        </a>
+                        </div>
                       </li>
                     ))
                   : 'No data'}

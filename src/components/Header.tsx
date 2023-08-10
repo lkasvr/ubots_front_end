@@ -39,6 +39,8 @@ const Header = () => {
             width={600}
             height={200}
             alt="Ubots Logo"
+            className="max-w-[180px] max-h-[58px]"
+            priority
           />
         </a>
 
@@ -46,57 +48,39 @@ const Header = () => {
           <nav aria-label="Global" className="hidden md:block">
             <ul className="flex items-center gap-6 text-sm">
               <li>
-                <a
+                <Link
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
+                  href="/requests"
                 >
-                  About
-                </a>
+                  Solicitações
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
+                  href="/clients"
                 >
-                  Careers
-                </a>
+                  Clientes
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
+                  href="/teams"
                 >
-                  History
-                </a>
+                  Times
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
+                  href="/assistants"
                 >
-                  Services
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
-                >
-                  Projects
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-500 transition hover:text-gray-500/75"
-                  href="/"
-                >
-                  Blog
-                </a>
+                  Assistentes
+                </Link>
               </li>
             </ul>
           </nav>
@@ -139,21 +123,6 @@ const Header = () => {
                                 </div>
                               </Link>
                             ))}
-                          </div>
-                          <div className="bg-gray-50 p-4">
-                            <a
-                              href="##"
-                              className="flow-root rounded-md px-2 py-2 transition duration-150 ease-in-out hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                            >
-                              <span className="flex items-center">
-                                <span className="text-sm font-medium text-gray-900">
-                                  Documentation
-                                </span>
-                              </span>
-                              <span className="block text-sm text-gray-500">
-                                Start integrating products and tools
-                              </span>
-                            </a>
                           </div>
                         </div>
                       </Popover.Panel>

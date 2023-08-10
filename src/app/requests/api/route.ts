@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export type Request = {
+export type Requests = {
   id: string;
   status: string;
   desc: string;
@@ -30,19 +30,16 @@ export async function GET() {
   return NextResponse.json({ data });
 }
 
-export async function POST() {
+export async function POST(req: Request) {
+  const reqData = await req.json();
+  console.log(JSON.stringify({ reqData }));
   const res = await fetch('http://localhost:3333/requests', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({
-      subject: 'Contratação de Empréstimos',
-      desc: 'Criado do front',
-    }),
+    body: JSON.stringify(reqData),
   });
-
   const data = await res.json();
-
   return NextResponse.json(data);
 }
