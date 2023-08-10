@@ -26,7 +26,7 @@ export default function Page() {
         ? assistants.map((assistant) => (
             <article
               key={assistant.id}
-              className="rounded-xl border bg-zinc-600 p-4"
+              className="rounded-xl border bg-orange-100 p-4 text-gray-900"
             >
               <div className="flex items-center gap-4">
                 <img
@@ -36,7 +36,7 @@ export default function Page() {
                 />
 
                 <div>
-                  <h3 className="text-lg font-medium text-white">
+                  <h3 className="text-lg font-medium text-black">
                     {assistant.name}
                   </h3>
 
@@ -45,7 +45,7 @@ export default function Page() {
                       <li className="p-1 leading-none">
                         <a
                           href="#"
-                          className="text-xs font-medium text-gray-300"
+                          className="text-xs font-medium text-gray-400"
                         >
                           {' '}
                           Team{' '}
@@ -53,7 +53,7 @@ export default function Page() {
                       </li>
 
                       <li className="p-1 leading-none">
-                        <a href="#" className="text-xs font-bold text-gray-300">
+                        <a href="#" className="text-xs font-bold text-gray-500">
                           {' '}
                           {assistant?.team?.name}{' '}
                         </a>
@@ -69,7 +69,7 @@ export default function Page() {
                       <li key={request.id}>
                         <a
                           href="#"
-                          className={`block h-full rounded-lg border p-4 hover:border-pink-600 ${
+                          className={`block h-full rounded-lg border p-4 hover:border-primary ${
                             request.status === 'CONCLUIDA'
                               ? 'border-green-400'
                               : 'border-white'
@@ -79,7 +79,7 @@ export default function Page() {
                             className={`font-medium ${
                               request.status === 'CONCLUIDA'
                                 ? 'text-green-300'
-                                : 'text-white'
+                                : 'text-zinc-600'
                             }`}
                           >
                             {request.status}
@@ -89,14 +89,14 @@ export default function Page() {
                             <li className="p-1 leading-none">
                               <a
                                 href="#"
-                                className="text-xs font-bold text-gray-300"
+                                className="text-xs font-bold text-gray-500"
                               >
                                 {request.subject.name}
                               </a>
                             </li>
                           </ul>
 
-                          <p className="mt-1 text-xs font-medium text-gray-300">
+                          <p className="mt-1 text-xs font-medium text-gray-400">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Maxime consequuntur deleniti, unde ab ut in!
                           </p>

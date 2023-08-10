@@ -32,7 +32,6 @@ export async function GET() {
 
 export async function POST(req: Request) {
   const reqData = await req.json();
-  console.log(JSON.stringify({ reqData }));
   const res = await fetch('http://localhost:3333/requests', {
     method: 'POST',
     headers: {

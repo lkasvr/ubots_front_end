@@ -26,7 +26,7 @@ export default function Page() {
         ? teams.map((team) => (
             <article
               key={team.id}
-              className="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl"
+              className="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-primary to-primary/70 p-0.5 shadow-xl"
             >
               <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
                 <time
@@ -43,14 +43,14 @@ export default function Page() {
                 </a>
 
                 <div className="mt-4 flex flex-wrap gap-1">
-                  <span className="whitespace-nowrap rounded-full bg-purple-200 px-2.5 py-0.5 text-xs text-purple-600">
+                  <span className="whitespace-nowrap rounded-full bg-primary/40 px-2.5 py-0.5 text-xs text-green-500">
                     {team.subject.name}
                   </span>
 
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  <span className="whitespace-nowrap rounded-full bg-primary/40 px-2.5 py-0.5 text-xs text-green-500">
                     Assistentes designados: <b>{team.assistants.length}</b>
                   </span>
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                  <span className="whitespace-nowrap rounded-full bg-primary/40 px-2.5 py-0.5 text-xs text-green-500">
                     Total de solicitações: <b>{team.requests.length}</b>
                   </span>
                 </div>

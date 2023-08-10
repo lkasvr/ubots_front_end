@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-h-screen h-screen w-screen`}>
+      <body
+        className={`${inter.className} max-h-screen h-screen w-screen overflow-x-hidden`}
+      >
         <Header />
         <main className="min-h-screen h-full w-full flex flex-row flex-nowrap items-center justify-center px-12">
           <div className="w-full h-5/6 p-4 text-base rounded-2xl text-gray-900 bg-gray-100 overflow-auto">
@@ -25,7 +27,7 @@ export default function RootLayout({
               Central de Relacionamento
             </h3>
             <br />
-            <section className="flex flex-row flex-wrap justify-center items-center gap-8 overflow-auto text-white">
+            <section className="flex flex-row flex-wrap justify-center items-stretch gap-8 overflow-y-auto text-white">
               {children}
             </section>
           </div>

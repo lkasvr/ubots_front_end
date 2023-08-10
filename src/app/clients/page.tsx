@@ -26,7 +26,7 @@ export default function Page() {
         ? clients.map((client) => (
             <article
               key={client.id}
-              className="rounded-xl border bg-zinc-600 p-4"
+              className="rounded-xl border bg-orange-100 00 p-4 text-zinc-600 font-bold"
             >
               <div className="flex items-center gap-4">
                 <img
@@ -36,7 +36,8 @@ export default function Page() {
                 />
 
                 <div>
-                  <h3 className="text-lg font-medium text-white">
+                  Cliente:
+                  <h3 className="text-lg font-medium text-zinc-500 ml-3">
                     {client.name}
                   </h3>
                 </div>
@@ -47,17 +48,17 @@ export default function Page() {
                   ? client.requests.map((request) => (
                       <li key={request.id}>
                         <div
-                          className={`block h-full rounded-lg border p-4 hover:border-pink-600 ${
+                          className={`block h-full rounded-lg border p-4 hover:border-primary ${
                             request.status === 'CONCLUIDA'
                               ? 'border-green-400'
-                              : 'border-white'
+                              : 'text-zinc-600'
                           }`}
                         >
                           <strong
                             className={`font-medium ${
                               request.status === 'CONCLUIDA'
                                 ? 'text-green-300'
-                                : 'text-white'
+                                : 'text-zinc-600'
                             }`}
                           >
                             {request.status}
@@ -69,7 +70,7 @@ export default function Page() {
                                 className={`text-[11px] font-medium  ${
                                   !request.assistantId
                                     ? 'text-orange-400 font-bold'
-                                    : 'text-gray-300'
+                                    : 'text-zinc-600'
                                 }`}
                               >
                                 {request.assistantId
@@ -79,7 +80,7 @@ export default function Page() {
                             </li>
                           </ul>
 
-                          <p className="mt-1 text-xs font-medium text-gray-300">
+                          <p className="mt-1 text-xs font-medium text-zinc-600">
                             {request.desc}
                           </p>
                         </div>
