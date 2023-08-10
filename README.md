@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **Ubots: Invext Fron-End - Dev (Lucas Vieira)**
+Desafio Técnico Ubots: Construção de uma <b>API</b> para automação de uma Central de Relacionamento
 
-## Getting Started
+</br>
 
-First, run the development server:
+### Link do Deploy na Vercel: https://leadster-test-theta.vercel.app/
+
+</br>
+
+# Layout da Aplicação
+
+## Desktop
+
+![Layout Ubots](./public/desktop/requests-page.png)
+#
+![Layout Ubots](./public/desktop/assistants-page.png)
+#
+![Layout Ubots](./public/desktop/team-page.png)
+
+</br>
+
+## Mobile
+
+![Layout Ubots](./public/mobile/clients-page-menu.png)
+#
+![Layout Ubots](./public/mobile/team-page.png)
+#
+![Layout Ubots](./public/mobile/requests-page.png)
+
+
+## Organização do Código
+
+- O código utilizou o NextJS 13 em sua última atualização bem como os seguintes recursos: ***App Router*** e ***Router Handlers*** de uma maneira bem simples (fecth) para lidar com as requisição a API
+- O foco maior se ateve ao back-end e as regras de negócio
+
+</br>
+
+## Instruções de Execução do Projeto
+
+📌 **ATENÇÃO**
+
+Antes de executar o projeto, saiba que a pretensão fora confeccionar  o foront-end para contemplar principalmente uma visualização um pouco mais concreta e menos conceitual da *API Invext* que é o núcleo do sistema e significar o requisito full-stack da oportunidade.
+
+Por tanto é **RECOMENDADO** que **o servidor da API esteja em execução** e com o funcionamento integrado para uma melhor experiência
+
+### **AMBIENTE DE DESENVOLVIMENTO**
+
+Primeiro, clone este reposiótio:
+
+```bash
+$ git clone git@github.com:lkasvr/leadster-test.git
+```
+Depois, execute os comandos abaixo na raíz do projeto:
+
+```bash
+npm install
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **AMBIENTE DE PRODUÇÃO**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Após os comandos acima, para simular a execução em produção execute os seguintes comandos:
 
-## Learn More
+```bash
+npm run build
+# e
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Abra [http://localhost:3000](http://localhost:3000) para ver o resultado.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
